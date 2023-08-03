@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Naruto",
+        "lastName": "Uzumaki",
+        "age": 20,
+        "id": 3
+    },
+    {
+        "name": "Sakura",
+        "lastName": "Haruno",
+        "age": 19,
+        "id": 4
+    },
+    {
+        "name": "Monkey D.",
+        "lastName": "Luffy",
+        "age": 21,
+        "id": 5
+    },
+    {
+        "name": "Roronoa",
+        "lastName": "Zoro",
+        "age": 22,
+        "id": 6
+    },
+    {
+        "name": "Ichigo",
+        "lastName": "Kurosaki",
+        "age": 18,
+        "id": 7
+    },
+    {
+        "name": "Rukia",
+        "lastName": "Kuchiki",
+        "age": 17,
+        "id": 8
+    },
+    {
+        "name": "Goku",
+        "lastName": "Son",
+        "age": 30,
+        "id": 9
+    },
+    {
+        "name": "Vegeta",
+        "lastName": "Prince",
+        "age": 32,
+        "id": 10
+    },
+    {
+        "name": "Eren",
+        "lastName": "Yeager",
+        "age": 19,
+        "id": 11
+    },
+    {
+        "name": "Mikasa",
+        "lastName": "Ackerman",
+        "age": 18,
+        "id": 12
+    }
+]
