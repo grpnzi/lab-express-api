@@ -15,7 +15,7 @@ Imagine you are a backend developer and you need to create this server to delive
 
 ### 1.1 - Ignore files from git
 
-Create a `.gitignore` file: remember this file is to avoid pushing some files to the repo. In this case, we want to avoid pushing the `node_modules` folder and the package-lock.json file.
+Create a `.gitignore` file: remember this file is to avoid pushing some files to the repo. In this case, we want to avoid pushing the `node_modules` folder and the `package-lock.json` file.
 Our `.gitignore` file will look like this:
 
 ```bash
