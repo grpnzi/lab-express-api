@@ -8,7 +8,6 @@ function RandomObjectFromArrayOfObjects(array) {
     return array[randomObject];
 }
 
-
 // Routes
 app.get("/api", (req, res, next) => {
     console.log('API is working');
@@ -27,10 +26,27 @@ app.get("/api/random", (req, res, next) => {
 });
 
 app.get('/api/:id', (req, res) => {
-    const id = req.params.id; // Convert id to integer
+    const id = req.params.id;
   
     res.send(data[id]);
 });
+
+app.get('/add', (req, res) => {
+
+    res.sendFile(__dirname + '/views/form.html');
+});
+
+// Allow to save the information in the 
+const bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.post('/api/add-character', (req, res) => {
+    // This route handler will handle the POST request to /api/add-character
+    const newCharacter =  {name: req.body.name, lastName: req.body.lastName, age: parseInt(req.body.age), id: (data.length + 1)};
+    data.push(newCharacter);
+    res.redirect('/add'); // Redirect back to the display route
+});
+
 
 app.listen(3000, ()=>{
     console.log('Running on 3000');
